@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eaf2f8;
+	font-family: Arial, sans-serif;
+	color: #243447;
+}
+
+.login {
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+}
+
+.formulario {
+	padding: 32px;
+	background-color: #ffffff;
+	border: 1px solid #d5e1ea;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(36, 52, 71, 0.12);
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 28px;
+}
+
+.subtitulo {
+	margin: 10px 0 24px;
+	text-align: center;
+	color: #62788a;
+}
+
+label {
+	display: block;
+	margin: 16px 0 6px;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #b8c8d4;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+#email {
+	width: 308px;
+}
+
+input:focus {
+	outline: 2px solid #2d7dd2;
+	border-color: #2d7dd2;
+}
+
+.campoSenha {
+	position: relative;
+}
+
+.campoSenha input {
+	width: 238px;
+	padding-right: 82px;
+}
+
+.botaoMostrar {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	width: auto;
+	margin: 0;
+	padding: 8px;
+	background-color: transparent;
+	color: #2d7dd2;
+	font-size: 14px;
+}
+
+.botaoMostrar:hover {
+	background-color: #eef6ff;
+}
+
+button {
+	width: 100%;
+	margin-top: 24px;
+	padding: 12px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #2d7dd2;
+	color: #ffffff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #2365ad;
+}
+
+.botaoCadastro {
+	display: block;
+	padding: 12px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: 1px solid #2d7dd2;
+	color: #2d7dd2;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.botaoCadastro:hover {
+	background-color: #e6f2ff;
+}
