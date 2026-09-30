@@ -5,8 +5,18 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: #eaf2f8;
+	background-image: url("../assets/images/loginAVAEduca+.png"); /* Fundo da página de login, feito com ajuda de IA para implementar a imagem */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: Arial, sans-serif;
 	color: #243447;
+}
+
+#AVA {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
 }
 
 .login {

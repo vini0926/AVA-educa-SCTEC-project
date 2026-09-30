@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
-        <h1 id="AVA-Ed">AVA Educa+</h1>
-        <h1 id="usuarioAtual">Bem-vindo, [Nome do Usuário]!</h1>
-        <img src="../assets/images/usuario_AVAEDUCA+.avif" alt="Foto de perfil padrão">
+    <header class="cabecalho">
+        <h1 id="headerAVA">AVA Educa+</h1>
+        <div id="nomeUsuario">
+            <p id="usuarioAtual">Bem-vindo, estudante.</p>
+            <img src="../assets/images/usuario_AVAEDUCA+.avif" alt="Foto de perfil">
+        </div>
     </header>
-    <main>
-        <h1>Cursos</h1>
-        <section class="cursos">
-            <div class="curso">
-                <h2>Placeholder</h2>
-                <p>Descrição do curso | curso sobre isso que executa essas habilidades isso é só exemplo pro formato do card</p>
-                <p>[dataInicio] - [dataFim]</p>
-            </div>
+    <main class="conteudo">
+        <section id="menuLateral">
+            <h1>Menu</h1>
+            <button class="botaoMenu" id="botaoDashboard">Dashboard</button>
+            <button class="botaoMenu" id="botaoCursos">Meus cursos</button>
+            <button class="botaoMenu" id="botaoCadastro">Cadastrar aluno</button>
+            <button class="botaoMenu" id="botaoSair">Sair</button>
         </section>
+        <div id="areaCursos">
+            <section id="MeusCursos">
+                <h1>Meus cursos</h1>
+            </section>
+            <section class="cursos">
+                <div class="Cardcurso">
+                    <h2 class="Cardtitulo">Placeholder</h2>
+                    <p class="Cardtexto">CardTesteCardTesteCardTesteCardTeste</p>
+                    <p class="Carddata">Início: [data inicio]<br>Fim: [data fim]</p>
+                </div>
+            </section>
+        </div>
     </main>
-    <script src="dashboard.js" defer></script>
 </body>
 </html>
