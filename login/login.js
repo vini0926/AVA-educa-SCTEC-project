@@ -1,8 +1,6 @@
-import { login } from '../js/auth.js';
-
-let senha = document.getElementById('senha');
-let mostrarSenha = document.getElementById('mostrarSenha');
-let formulario = document.querySelector('.formulario');
+const senha = document.getElementById('senha');
+const mostrarSenha = document.getElementById('mostrarSenha');
+const formulario = document.querySelector('.formulario');
 
 formulario.addEventListener('submit', async (evento) => {
     evento.preventDefault();
@@ -12,7 +10,8 @@ formulario.addEventListener('submit', async (evento) => {
             document.getElementById('email').value,
             senha.value
         );
-        localStorage.setItem('usuarioAtual', JSON.stringify(usuario)); // tive que pedir ajuda de IA
+        sessionStorage.setItem('usuarioAtual', JSON.stringify(usuario));
+        localStorage.removeItem('usuarioAtual');
         window.location.href = '../dashboard/dashboard.html'; // para implementar a sessão do usuário logado
     } catch (mensagem) {
         window.alert(mensagem);
@@ -25,7 +24,7 @@ document.getElementById('esqueceuSenha').addEventListener('click', (evento) => {
 });
 
 mostrarSenha.addEventListener('click', () => {
-	let senhaVisivel = senha.type === 'text';
+	const senhaVisivel = senha.type === 'text';
 	senha.type = senhaVisivel ? 'password' : 'text';
 	mostrarSenha.textContent = senhaVisivel ? 'Mostrar' : 'Ocultar';
 });

@@ -1,4 +1,4 @@
-const usuarioAtual = JSON.parse(localStorage.getItem('usuarioAtual'));
+const usuarioAtual = JSON.parse(sessionStorage.getItem('usuarioAtual'));
 
 function listarCursos(usuario) {
 }

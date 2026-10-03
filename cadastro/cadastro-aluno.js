@@ -1,3 +1,21 @@
+const usuarioLogado = JSON.parse(sessionStorage.getItem('usuarioAtual'));
+const saudacaoUsuario = document.getElementById('usuarioAtual');
+const botaoDashboard = document.getElementById('botaoDashboard');
+const botaoSair = document.getElementById('botaoSair');
+
+if (usuarioLogado && saudacaoUsuario) {
+    saudacaoUsuario.textContent = `Bem-vindo, ${usuarioLogado.nome}.`;
+}
+
+botaoDashboard.addEventListener('click', () => {
+    window.location.href = '../dashboard/dashboard.html';
+});
+
+botaoSair.addEventListener('click', () => {
+    sessionStorage.removeItem('usuarioAtual');
+    window.location.href = '../login/login.html';
+});
+
 const dataNasc = document.getElementById('dataNasc');
 
 if (dataNasc) { 
