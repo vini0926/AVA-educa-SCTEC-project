@@ -7,7 +7,7 @@ export function login(usuario, senha) {
         );
 
         if (!usuarioEncontrado) {
-            reject('Dados incorretos. Favor verificar e tentar novamente.');
+            reject('Dados incorretos. Favor verificar e tentar novamente');
             return;
         }
 

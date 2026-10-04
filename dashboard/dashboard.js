@@ -2,6 +2,7 @@ import { listarCursos } from '../js/cursos.js';
 
 const usuario = JSON.parse(sessionStorage.getItem('usuarioAtual'));
 const saudacao = document.getElementById('usuarioAtual');
+const botaoDashboard = document.getElementById('botaoDashboard');
 const botaoCadastro = document.getElementById('botaoCadastro');
 const botaoSair = document.getElementById('botaoSair');
 const listaCursos = document.querySelector('.cursos');
@@ -30,6 +31,10 @@ if (usuario) {
 } else {
     listaCursos.textContent = 'Faça login para visualizar seus cursos.';
 }
+
+botaoDashboard.addEventListener('click', () => {
+    window.location.href = 'dashboard.html';
+});
 
 botaoCadastro.addEventListener('click', () => {
     window.location.href = '../cadastro/cadastro-aluno.html';
