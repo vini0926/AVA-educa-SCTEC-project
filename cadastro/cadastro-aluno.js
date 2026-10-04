@@ -1,3 +1,6 @@
+import { Aluno } from '../js/Aluno.js';
+import { cadastrarAluno } from '../js/alunos.js';
+
 const usuarioLogado = JSON.parse(sessionStorage.getItem('usuarioAtual'));
 const saudacaoUsuario = document.getElementById('usuarioAtual');
 const botaoDashboard = document.getElementById('botaoDashboard');
@@ -111,8 +114,29 @@ if (CEP) { //também precisei de ajuda de IA para validar o CEP com a API do Via
 
 const formulario = document.getElementById('cadastro');
 
-formulario.addEventListener('submit', (evento) => {
+formulario.addEventListener('submit', async (evento) => {
     evento.preventDefault();
-    window.alert('Aluno cadastrado ✅');
-    formulario.reset();
+
+    const aluno = new Aluno(
+        document.getElementById('nome').value,
+        document.getElementById('genero').value,
+        dataNasc.value,
+        CPF.value,
+        telefone.value,
+        document.getElementById('email').value,
+        CEP.value,
+        document.getElementById('cidade').value,
+        document.getElementById('estado').value,
+        document.getElementById('logradouro').value,
+        document.getElementById('numero').value,
+        document.getElementById('complemento').value,
+        document.getElementById('bairro').value
+    );
+
+    try {
+        window.alert(await cadastrarAluno(aluno));
+        formulario.reset();
+    } catch (mensagem) {
+        window.alert(mensagem);
+    }
 });

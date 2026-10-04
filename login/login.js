@@ -12,7 +12,7 @@ formulario.addEventListener('submit', async (evento) => {
         );
         sessionStorage.setItem('usuarioAtual', JSON.stringify(usuario));
         localStorage.removeItem('usuarioAtual');
-        window.location.href = '../dashboard/dashboard.html'; // para implementar a sessão do usuário logado
+        window.location.href = '../dashboard/dashboard.html';
     } catch (mensagem) {
         window.alert(mensagem);
     }
