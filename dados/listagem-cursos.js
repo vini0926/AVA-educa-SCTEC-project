@@ -1,4 +1,4 @@
-const cursos = [
+export const cursos = [
     {
         id: 1,
         nomeCurso: "Desenvolvimento Web",

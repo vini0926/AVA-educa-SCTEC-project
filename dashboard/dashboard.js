@@ -1,3 +1,5 @@
+import { listarCursos } from '../js/cursos.js';
+
 const usuario = JSON.parse(sessionStorage.getItem('usuarioAtual'));
 const saudacao = document.getElementById('usuarioAtual');
 const botaoCadastro = document.getElementById('botaoCadastro');

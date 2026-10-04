@@ -1,3 +1,5 @@
+import { login } from '../js/auth.js';
+
 const senha = document.getElementById('senha');
 const mostrarSenha = document.getElementById('mostrarSenha');
 const formulario = document.querySelector('.formulario');
