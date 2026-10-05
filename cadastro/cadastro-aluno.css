@@ -164,7 +164,8 @@ body {
 	border-radius: 4px;
 	background-color: #ffffff;
 	color: #243447;
-	font: inherit;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
 
 #campoPessoal select {
@@ -175,7 +176,8 @@ body {
 	border-radius: 4px;
 	background-color: #ffffff;
 	color: #243447;
-	font: inherit;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
 
 #campoEndereco input {
@@ -186,7 +188,8 @@ body {
 	border-radius: 4px;
 	background-color: #ffffff;
 	color: #243447;
-	font: inherit;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
 
 #secaoComplemento {
@@ -207,7 +210,120 @@ body {
 	border-radius: 4px;
 	background-color: #2d7dd2;
 	color: #ffffff;
-	font: inherit;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	#areaCadastro {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	#introdCadastro {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#introdCadastro h1 {
+		font-size: 28px;
+	}
+
+	#cadastro {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 24px;
+	}
+
+	#campoPessoal {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	#campoPessoal input,
+	#campoPessoal select {
+		width: auto;
+	}
+
+	#campoEndereco {
+		grid-column: auto;
+		grid-row: auto;
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	#campoEndereco h2,
+	#secaoComplemento {
+		grid-column: auto;
+	}
+
+	#campoEndereco input,
+	#secaoComplemento input {
+		width: auto;
+	}
+
+	#botaoCadastroEnviar {
+		grid-column: auto;
+		grid-row: auto;
+		width: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.cabecalho {
+		min-height: 0;
+		padding: 12px;
+		gap: 8px;
+	}
+
+	#headerAVA {
+		font-size: 24px;
+	}
+
+	#nomeUsuario {
+		min-width: 0;
+		gap: 8px;
+	}
+
+	#nomeUsuario p {
+		font-size: 14px;
+		text-align: right;
+	}
+
+	#nomeUsuario img {
+		width: 42px;
+		height: 42px;
+		flex-shrink: 0;
+	}
+
+	.conteudo {
+		flex-direction: column;
+	}
+
+	#menuLateral {
+		width: auto;
+		padding: 12px 10px;
+		border-right: 0;
+		border-bottom: 1px solid #2365ad;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 4px;
+	}
+
+	#menuLateral h1 {
+		width: 100%;
+		margin-bottom: 4px;
+		font-size: 20px;
+	}
+
+	.botaoMenu {
+		width: auto;
+		padding: 10px 8px;
+		text-align: center;
+		font-size: 15px;
+	}
 }

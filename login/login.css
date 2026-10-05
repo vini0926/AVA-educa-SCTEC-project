@@ -84,7 +84,7 @@ input:focus {
 	width: auto;
 	margin: 0;
 	padding: 8px;
-	background-color: transparent;
+	background-color: #ffffff;
 	color: #2d7dd2;
 	font-size: 14px;
 }
@@ -114,4 +114,45 @@ button:hover {
 	margin-top: 16px;
 	color: #2365ad;
 	text-align: center;
+}
+
+@media (max-width: 768px) {
+	body {
+		min-height: 100vh;
+		padding: 0 16px;
+	}
+
+	.login {
+		width: 100%;
+		padding: 0;
+	}
+
+	#AVA {
+		margin-bottom: 20px;
+		font-size: 32px;
+	}
+
+	.formulario {
+		padding: 16px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	#email {
+		width: 91%;
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+
+	#senha {
+		width: 71%;
+		padding-right: 24%;
+		padding-left: 4%;
+	}
+
+	#entrar {
+		width: 100%;
+	}
 }
